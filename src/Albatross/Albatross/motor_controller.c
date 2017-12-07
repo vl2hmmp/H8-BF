@@ -6,6 +6,7 @@
 */
 
 #include "motor_controller.h"
+#include "utils.h"
 
 /*
 * @brief ÉÇÅ[É^Ç…dutyî‰Çê›íËÇµÇ‹Ç∑ÅB
@@ -15,35 +16,33 @@
 void setMortorDuty(int leftDuty, int rightDuty)
 {
 	leftDuty *= -Ratio_duty;
-	leftDuty = Max_duty < leftDuty ? Max_duty : leftDuty;
-	leftDuty = leftDuty < -Max_duty ? -Max_duty : leftDuty;
+	leftDuty = clamp(leftDuty, -Max_duty, Max_duty);
 
-	MOTOR_0_DUTY = leftDuty;
+	MOTOR_0_DUTY = abs(leftDuty);
 	if (0 < leftDuty) {
 		MOTOR_0_CW;
 	}
-	else if (leftDuty == 0) {
+	else if (leftDuty < 0) {
+		MOTOR_0_CCW;
+	}
+	else {
 		MOTOR_0_DUTY = Max_duty;
 		MOTOR_0_BREAK;
 	}
-	else {
-		MOTOR_0_CCW;
-	}
 
 	rightDuty *= Ratio_duty;
-	rightDuty = Max_duty < rightDuty ? Max_duty : rightDuty;
-	rightDuty = rightDuty < -Max_duty ? -Max_duty : rightDuty;
+	rightDuty = clamp(rightDuty, -Max_duty, Max_duty);
 
-	MOTOR_1_DUTY = -1 * rightDuty;
+	MOTOR_1_DUTY = abs(rightDuty);
 	if (0 < rightDuty) {
 		MOTOR_1_CW;
 	}
-	else if (rightDuty == 0) {
-		MOTOR_1_DUTY = Max_duty;
-		MOTOR_1_BREAK;
+	else if (rightDuty < 0) {
+		MOTOR_1_CCW;
 	}
 	else {
-		MOTOR_1_CCW;
+		MOTOR_1_DUTY = Max_duty;
+		MOTOR_1_BREAK;
 	}
 }
 
