@@ -1,0 +1,6 @@
+<Source>motor_controller.c</Source>
+<Source>main.c</Source>
+<Header>main.h</Header>
+<Header>motor_controller.h</Header>
+<Header>common.h</Header>
+<Header>r3069.h</Header>
