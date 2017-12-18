@@ -44,7 +44,7 @@ int main()
 			Photo_3==Black&&
 			Photo_4==White)
 		{
-			setMortorDuty(100, 100);
+			setMortorDuty(100, 50);
 		}
 		else if(
 			Photo_1==White&&  //›œœ›
@@ -52,23 +52,7 @@ int main()
 			Photo_3==White&&
 			Photo_4==White)
 		{
-			setMortorDuty(100, 100);
-		}
-		else if(
-			Photo_1==Black&&  //›œœ›
-			Photo_2==White&&
-			Photo_3==Black&&
-			Photo_4==Black)
-		{
-			setMortorDuty(100, 100);
-		}
-		else if(
-			Photo_1==Black&&  //›œœ›
-			Photo_2==Black&&
-			Photo_3==White&&
-			Photo_4==Black)
-		{
-			setMortorDuty(100, 100);
+			setMortorDuty(50, 100);
 		}
 		else if(
 			Photo_1==White&&  //›››œ
@@ -76,7 +60,7 @@ int main()
 			Photo_3==White&&
 			Photo_4==Black)
 		{
-			setMortorDuty(100, 8);
+			setMortorDuty(100, 6);
 		}
 		else if(	
 			Photo_1==White&&  //››œœ
@@ -84,7 +68,7 @@ int main()
 			Photo_3==Black&&
 			Photo_4==Black)
 		{
-			setMortorDuty(100, 12);
+			setMortorDuty(100, 10);
 		}
 		else if(
 			Photo_1==White&&  //›œœœ
@@ -92,7 +76,7 @@ int main()
 			Photo_3==Black&&
 			Photo_4==Black)
 		{
-			setMortorDuty(100, 15);
+			setMortorDuty(100, 12);
 		}
 		else if(
 			Photo_1==Black&&  //œ›››
@@ -100,7 +84,7 @@ int main()
 			Photo_3==White&&
 			Photo_4==White)
 		{
-			setMortorDuty(8, 100);
+			setMortorDuty(6, 100);
 		}
 		else if(
 			Photo_1==Black&&  //œœ››
@@ -108,7 +92,7 @@ int main()
 			Photo_3==White&&
 			Photo_4==White)
 		{
-			setMortorDuty(12, 100);
+			setMortorDuty(10, 100);
 		}
 		else if(
 			Photo_1==Black&&  //œœœ›
@@ -116,7 +100,7 @@ int main()
 			Photo_3==Black&&
 			Photo_4==White)
 		{
-			setMortorDuty(15, 100);
+			setMortorDuty(12, 100);
 		}
 		else if(
 			Photo_1==Black&&  //œœœœ
@@ -134,7 +118,6 @@ int main()
 		{
 			setMortorDuty(1, 20);
 		}
-		sleep(1);
 	}
 }
 
