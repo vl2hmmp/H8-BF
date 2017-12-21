@@ -3,6 +3,8 @@
 
 #include "main.h"
 
+void initializeMotor();
+void feedMotor();
 void setMortorDuty(int leftDuty, int rightDuty);
 int getEncorder(enum Motor motor);
 

@@ -21,6 +21,7 @@ int main()
 	while(P6.DR.BIT.B0);
 
 	//trace();
+	parking();
 }
 
 /*
