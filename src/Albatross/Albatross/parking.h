@@ -3,6 +3,7 @@
 
 #include "main.h"
 
+void feedParking();
 void parking();
 
 #endif

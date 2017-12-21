@@ -3,6 +3,7 @@
 
 #include "main.h"
 
+void feedLineTrace();
 void trace();
 
 #endif

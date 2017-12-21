@@ -7,6 +7,7 @@
 
 #include "main.h"
 #include "line_trace.h"
+#include "parking.h"
 
 /*
 * @brief アプリケーションのメインエントリポイントです。
@@ -14,6 +15,7 @@
 int main()
 {
 	initilize();
+	initializeMotor();
 
 	START_FEED;
 
@@ -108,7 +110,9 @@ void prg_end()
 #pragma interrupt
 void feed()
 {
-	STOP_ENCO_COUNT;
+	feedMotor();
+	feedLineTrace();
+	feedParking();
 
 	OCT_ITU3.TCSR.BIT.CMFA = 0;
 }

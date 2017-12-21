@@ -8,8 +8,18 @@
 #include "parking.h"
 #include "motor_controller.h"
 
+int FeedParkingFlag = 0;
+
+void feedParking()
+{
+	if (FeedParkingFlag == 0)
+		return;
+}
+
 void parking()
 {
+	FeedParkingFlag = 1;
 	// ‚±‚±‚É’“Ô—p‚Ìtraj‚È‚ñ‚Æ‚©‚ğg‚Á‚ÄÔŒÉ“ü‚êè‡‚ğ‘‚­‚±‚Æ
 	// traj‚È‚ñ‚Æ‚©‚Ímotor_controller.c‚Ì’†‚É’è‹`Ï‚İ
+	FeedParkingFlag = 0;
 }
