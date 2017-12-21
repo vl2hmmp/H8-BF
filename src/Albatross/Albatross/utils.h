@@ -1,5 +1,5 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef UTILS_H
+#define UTILS_H
 
 #include "main.h"
 

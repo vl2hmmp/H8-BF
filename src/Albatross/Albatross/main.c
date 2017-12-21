@@ -6,13 +6,7 @@
  */
 
 #include "main.h"
-#include "motor_controller.h"
-
-static int  Feed_flag;
-
-void initilize();
-void prg_end();
-void feed();
+#include "line_trace.h"
 
 /*
 * @brief アプリケーションのメインエントリポイントです。
@@ -26,98 +20,7 @@ int main()
 	printf("\r Press Start Button.\r\n");
 	while(P6.DR.BIT.B0);
 
-	Feed_flag = PHOTO;
-
-	while(1){
-		if(
-			Photo_1==White&&  //○●●○
-			Photo_2==Black&&
-			Photo_3==Black&&
-			Photo_4==White)
-		{
-			setMortorDuty(100, 100);
-		}
-		else if(
-			Photo_1==White&&  //○●●○
-			Photo_2==White&&
-			Photo_3==Black&&
-			Photo_4==White)
-		{
-			setMortorDuty(100, 50);
-		}
-		else if(
-			Photo_1==White&&  //○●●○
-			Photo_2==Black&&
-			Photo_3==White&&
-			Photo_4==White)
-		{
-			setMortorDuty(50, 100);
-		}
-		else if(
-			Photo_1==White&&  //○○○●
-			Photo_2==White&&
-			Photo_3==White&&
-			Photo_4==Black)
-		{
-			setMortorDuty(100, 6);
-		}
-		else if(	
-			Photo_1==White&&  //○○●●
-			Photo_2==White&&
-			Photo_3==Black&&
-			Photo_4==Black)
-		{
-			setMortorDuty(100, 10);
-		}
-		else if(
-			Photo_1==White&&  //○●●●
-			Photo_2==Black&&
-			Photo_3==Black&&
-			Photo_4==Black)
-		{
-			setMortorDuty(100, 12);
-		}
-		else if(
-			Photo_1==Black&&  //●○○○
-			Photo_2==White&&
-			Photo_3==White&&
-			Photo_4==White)
-		{
-			setMortorDuty(6, 100);
-		}
-		else if(
-			Photo_1==Black&&  //●●○○
-			Photo_2==Black&&
-			Photo_3==White&&
-			Photo_4==White)
-		{
-			setMortorDuty(10, 100);
-		}
-		else if(
-			Photo_1==Black&&  //●●●○
-			Photo_2==Black&&
-			Photo_3==Black&&
-			Photo_4==White)
-		{
-			setMortorDuty(12, 100);
-		}
-		else if(
-			Photo_1==Black&&  //●●●●
-			Photo_2==Black&&
-			Photo_3==Black&&
-			Photo_4==Black)
-		{
-			setMortorDuty(100, 100);
-		}
-		else if(
-			Photo_1==White&&  //○○○○
-			Photo_2==White&&
-			Photo_3==White&&
-			Photo_4==White)
-		{
-			setMortorDuty(1, 20);
-		}
-	}
+	//trace();
 }
 
 /*
@@ -205,111 +108,6 @@ void prg_end()
 void feed()
 {
 	STOP_ENCO_COUNT;
-/*
-	if(
-		Photo_1==White&&  //○●●○
-		Photo_2==Black&&
-		Photo_3==Black&&
-		Photo_4==White)
-	{
-		setMortorDuty(100, 100);
-	}
-	else if(
-		Photo_1==White&&  //○●●○
-		Photo_2==White&&
-		Photo_3==Black&&
-		Photo_4==White)
-	{
-		setMortorDuty(100, 100);
-	}
-	else if(
-		Photo_1==White&&  //○●●○
-		Photo_2==Black&&
-		Photo_3==White&&
-		Photo_4==White)
-	{
-		setMortorDuty(100, 100);
-	}
-	else if(
-		Photo_1==Black&&  //○●●○
-		Photo_2==White&&
-		Photo_3==Black&&
-		Photo_4==Black)
-	{
-		setMortorDuty(100, 100);
-	}
-	else if(
-		Photo_1==Black&&  //○●●○
-		Photo_2==Black&&
-		Photo_3==White&&
-		Photo_4==Black)
-	{
-		setMortorDuty(100, 100);
-	}
-	else if(
-		Photo_1==White&&  //○○○●
-		Photo_2==White&&
-		Photo_3==White&&
-		Photo_4==Black)
-	{
-		setMortorDuty(90, 30);
-	}
-	else if(	
-		Photo_1==White&&  //○○●●
-		Photo_2==White&&
-		Photo_3==Black&&
-		Photo_4==Black)
-	{
-		setMortorDuty(100, 30);
-	}
-	else if(
-		Photo_1==White&&  //○●●●
-		Photo_2==Black&&
-		Photo_3==Black&&
-		Photo_4==Black)
-	{
-		setMortorDuty(100, 30);
-	}
-	else if(
-		Photo_1==Black&&  //●○○○
-		Photo_2==White&&
-		Photo_3==White&&
-		Photo_4==White)
-	{
-		setMortorDuty(30, 90);
-	}
-	else if(
-		Photo_1==Black&&  //●●○○
-		Photo_2==Black&&
-		Photo_3==White&&
-		Photo_4==White)
-	{
-		setMortorDuty(30, 100);
-	}
-	else if(
-		Photo_1==Black&&  //●●●○
-		Photo_2==Black&&
-		Photo_3==Black&&
-		Photo_4==White)
-	{
-		setMortorDuty(30, 100);
-	}
-	else if(
-		Photo_1==Black&&  //●●●●
-		Photo_2==Black&&
-		Photo_3==Black&&
-		Photo_4==Black)
-	{
-		setMortorDuty(100, 100);
-	}
-	else if(
-		Photo_1==White&&  //○○○○
-		Photo_2==White&&
-		Photo_3==White&&
-		Photo_4==White)
-	{
-		setMortorDuty(30, 100);
-	}
-*/
+
 	OCT_ITU3.TCSR.BIT.CMFA = 0;
 }

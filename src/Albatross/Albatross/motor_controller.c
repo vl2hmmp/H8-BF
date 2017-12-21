@@ -54,7 +54,6 @@ void setMortorDuty(int leftDuty, int rightDuty)
 * @param motor 取得するモータ
 * @return エンコーダの値
 */
-
 int getEncorder(enum Motor motor)
 {
 	int  r0_present_d, r0_last_d, r0_present_delta = 0;

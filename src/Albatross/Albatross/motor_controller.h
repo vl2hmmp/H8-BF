@@ -3,4 +3,7 @@
 
 #include "main.h"
 
+void setMortorDuty(int leftDuty, int rightDuty);
+int getEncorder(enum Motor motor);
+
 #endif

@@ -20,13 +20,16 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="common.h" />
+    <ClInclude Include="line_trace.h" />
     <ClInclude Include="main.h" />
+    <ClInclude Include="mes2.h" />
     <ClInclude Include="motor_controller.h" />
     <ClInclude Include="old_common.h" />
     <ClInclude Include="r3069.h" />
     <ClInclude Include="utils.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="line_trace.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="motor_controller.c" />
     <ClCompile Include="old_main.c" />
