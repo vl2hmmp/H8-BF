@@ -9,7 +9,6 @@
 #include "motor_controller.h"
 
 static int  Feed_flag;
-ct_sharedType  Ct;
 
 void initilize();
 void prg_end();

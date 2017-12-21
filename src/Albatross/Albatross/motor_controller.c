@@ -8,6 +8,8 @@
 #include "motor_controller.h"
 #include "utils.h"
 
+ct_sharedType  Ct;
+
 /*
 * @brief モータにduty比を設定します。
 * @param leftDuty 設定する値
@@ -52,7 +54,7 @@ void setMortorDuty(int leftDuty, int rightDuty)
 * @param motor 取得するモータ
 * @return エンコーダの値
 */
-/*
+
 int getEncorder(enum Motor motor)
 {
 	int  r0_present_d, r0_last_d, r0_present_delta = 0;
@@ -80,7 +82,7 @@ int getEncorder(enum Motor motor)
 			Ct.tmp_enco_val[motor] += Ct.enco[motor].present.delta;
 			break;
 		case RightMotor:
-			//Ct.enco[no].present.d= (HEX_ITU0.TCNT - HEX_ITU1.TCNT)*2;  // 2逓倍      
+			Ct.enco[motor].present.d= (HEX_ITU0.TCNT - HEX_ITU1.TCNT)*2;  // 2逓倍      
 			// -------------
 			// --- r0 用 ---
 			// -------------
@@ -127,4 +129,4 @@ int getEncorder(enum Motor motor)
 
 	return Ct.tmp_enco_val[motor];
 }
-*/
+
