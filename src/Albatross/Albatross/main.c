@@ -5,6 +5,7 @@
  * @author 桐林　颯
  */
 
+
 #include "main.h"
 #include "line_trace.h"
 #include "parking.h"
@@ -21,9 +22,9 @@ int main()
 
 	printf("\r Press Start Button.\r\n");
 	while(P6.DR.BIT.B0);
-
-	//trace();
+	trace();
 	parking();
+	pressButton();
 }
 
 /*
@@ -37,8 +38,10 @@ void initilize()
 	set_handler(7, prg_end);
 
 	// *** ポート入出力設定 (for motor, photo-sensor) ***
+	P3.DDR = 0x00;
 	P4.DDR = 0xff;  // output (for motor)
 	P5.DDR = 0x00;  // input  (for photo-sensor)
+	P4.DR.BIT.B7 = 0;
 
 					// *** 8bit timer pwm settings (for motor) 3069マニュアル pp.482 参照 ***
 					// [φ/8192 ->3] ,[φ/64 ->2] ,[φ/8 ->1]
@@ -110,6 +113,8 @@ void prg_end()
 #pragma interrupt
 void feed()
 {
+	load_segment(42);
+
 	feedMotor();
 	feedLineTrace();
 	feedParking();

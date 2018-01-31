@@ -1,8 +1,15 @@
 <Source>motor_controller.c</Source>
 <Source>main.c</Source>
 <Source>utils.c</Source>
+<Source>parking.c</Source>
+<Source>line_trace.c</Source>
+<Source>press_button.c</Source>
 <Header>main.h</Header>
 <Header>motor_controller.h</Header>
 <Header>common.h</Header>
 <Header>r3069.h</Header>
 <Header>utils.h</Header>
+<Header>mes2.h</Header>
+<Header>parking.h</Header>
+<Header>line_trace.h</Header>
+<Header>press_button.h</Header>

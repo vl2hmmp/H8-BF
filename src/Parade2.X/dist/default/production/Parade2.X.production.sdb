@@ -1,0 +1,291 @@
+[p LITE_MODE AUTOSTATIC PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F88 ]
+[d frameptr 6 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"56 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"44 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\pic\eeprom.c
+[v _eecpymem eecpymem `(v  1 e 1 0 ]
+"39
+[v _memcpyee memcpyee `(v  1 e 1 0 ]
+"35 C:\Users\shinpei\Desktop\servo\Parade2.X\main.c
+[v _playDO1 playDO1 `(v  1 e 1 0 ]
+"46
+[v _playRE1 playRE1 `(v  1 e 1 0 ]
+"57
+[v _playMI1 playMI1 `(v  1 e 1 0 ]
+"68
+[v _playFA1 playFA1 `(v  1 e 1 0 ]
+"79
+[v _playSO1 playSO1 `(v  1 e 1 0 ]
+"90
+[v _playRA1 playRA1 `(v  1 e 1 0 ]
+"101
+[v _playSI1 playSI1 `(v  1 e 1 0 ]
+"112
+[v _playDO2 playDO2 `(v  1 e 1 0 ]
+"123
+[v _playRE2 playRE2 `(v  1 e 1 0 ]
+"134
+[v _playMI2 playMI2 `(v  1 e 1 0 ]
+"145
+[v _playFA2 playFA2 `(v  1 e 1 0 ]
+"156
+[v _playSO2 playSO2 `(v  1 e 1 0 ]
+"167
+[v _playRA2 playRA2 `(v  1 e 1 0 ]
+"178
+[v _playSI2 playSI2 `(v  1 e 1 0 ]
+"189
+[v _playDO3 playDO3 `(v  1 e 1 0 ]
+"200
+[v _main main `(v  1 e 1 0 ]
+[s S19 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"243 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic16f88.h
+[u S28 . 1 `S19 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES28  1 e 1 @6 ]
+"1147
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+"1333
+[v _OSCCON OSCCON `VEuc  1 e 1 @143 ]
+"200 C:\Users\shinpei\Desktop\servo\Parade2.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"208
+[v main@j j `i  1 a 2 56 ]
+"213
+[v main@j_126 j `i  1 a 2 58 ]
+"206
+[v main@i i `i  1 a 2 54 ]
+"284
+} 0
+"156
+[v _playSO2 playSO2 `(v  1 e 1 0 ]
+{
+"158
+[v playSO2@i i `i  1 a 2 49 ]
+"157
+[v playSO2@count count `i  1 a 2 47 ]
+"156
+[v playSO2@time time `f  1 p 3 40 ]
+"165
+} 0
+"79
+[v _playSO1 playSO1 `(v  1 e 1 0 ]
+{
+"81
+[v playSO1@i i `i  1 a 2 49 ]
+"80
+[v playSO1@count count `i  1 a 2 47 ]
+"79
+[v playSO1@time time `f  1 p 3 40 ]
+"88
+} 0
+"178
+[v _playSI2 playSI2 `(v  1 e 1 0 ]
+{
+"180
+[v playSI2@i i `i  1 a 2 49 ]
+"179
+[v playSI2@count count `i  1 a 2 47 ]
+"178
+[v playSI2@time time `f  1 p 3 40 ]
+"187
+} 0
+"101
+[v _playSI1 playSI1 `(v  1 e 1 0 ]
+{
+"103
+[v playSI1@i i `i  1 a 2 49 ]
+"102
+[v playSI1@count count `i  1 a 2 47 ]
+"101
+[v playSI1@time time `f  1 p 3 40 ]
+"110
+} 0
+"123
+[v _playRE2 playRE2 `(v  1 e 1 0 ]
+{
+"125
+[v playRE2@i i `i  1 a 2 49 ]
+"124
+[v playRE2@count count `i  1 a 2 47 ]
+"123
+[v playRE2@time time `f  1 p 3 40 ]
+"132
+} 0
+"46
+[v _playRE1 playRE1 `(v  1 e 1 0 ]
+{
+"48
+[v playRE1@i i `i  1 a 2 49 ]
+"47
+[v playRE1@count count `i  1 a 2 47 ]
+"46
+[v playRE1@time time `f  1 p 3 40 ]
+"55
+} 0
+"167
+[v _playRA2 playRA2 `(v  1 e 1 0 ]
+{
+"169
+[v playRA2@i i `i  1 a 2 49 ]
+"168
+[v playRA2@count count `i  1 a 2 47 ]
+"167
+[v playRA2@time time `f  1 p 3 40 ]
+"176
+} 0
+"90
+[v _playRA1 playRA1 `(v  1 e 1 0 ]
+{
+"92
+[v playRA1@i i `i  1 a 2 49 ]
+"91
+[v playRA1@count count `i  1 a 2 47 ]
+"90
+[v playRA1@time time `f  1 p 3 40 ]
+"99
+} 0
+"134
+[v _playMI2 playMI2 `(v  1 e 1 0 ]
+{
+"136
+[v playMI2@i i `i  1 a 2 49 ]
+"135
+[v playMI2@count count `i  1 a 2 47 ]
+"134
+[v playMI2@time time `f  1 p 3 40 ]
+"143
+} 0
+"57
+[v _playMI1 playMI1 `(v  1 e 1 0 ]
+{
+"59
+[v playMI1@i i `i  1 a 2 49 ]
+"58
+[v playMI1@count count `i  1 a 2 47 ]
+"57
+[v playMI1@time time `f  1 p 3 40 ]
+"66
+} 0
+"145
+[v _playFA2 playFA2 `(v  1 e 1 0 ]
+{
+"147
+[v playFA2@i i `i  1 a 2 49 ]
+"146
+[v playFA2@count count `i  1 a 2 47 ]
+"145
+[v playFA2@time time `f  1 p 3 40 ]
+"154
+} 0
+"68
+[v _playFA1 playFA1 `(v  1 e 1 0 ]
+{
+"70
+[v playFA1@i i `i  1 a 2 49 ]
+"69
+[v playFA1@count count `i  1 a 2 47 ]
+"68
+[v playFA1@time time `f  1 p 3 40 ]
+"77
+} 0
+"189
+[v _playDO3 playDO3 `(v  1 e 1 0 ]
+{
+"191
+[v playDO3@i i `i  1 a 2 49 ]
+"190
+[v playDO3@count count `i  1 a 2 47 ]
+"189
+[v playDO3@time time `f  1 p 3 40 ]
+"198
+} 0
+"112
+[v _playDO2 playDO2 `(v  1 e 1 0 ]
+{
+"114
+[v playDO2@i i `i  1 a 2 49 ]
+"113
+[v playDO2@count count `i  1 a 2 47 ]
+"112
+[v playDO2@time time `f  1 p 3 40 ]
+"121
+} 0
+"35
+[v _playDO1 playDO1 `(v  1 e 1 0 ]
+{
+"37
+[v playDO1@i i `i  1 a 2 49 ]
+"36
+[v playDO1@count count `i  1 a 2 47 ]
+"35
+[v playDO1@time time `f  1 p 3 40 ]
+"44
+} 0
+"44 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+{
+"47
+[v ___fttol@lval lval `ul  1 a 4 35 ]
+"46
+[v ___fttol@exp1 exp1 `uc  1 a 1 39 ]
+[v ___fttol@sign1 sign1 `uc  1 a 1 34 ]
+"44
+[v ___fttol@f1 f1 `f  1 p 3 26 ]
+"73
+} 0
+"62 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+{
+"65
+[v ___ftmul@f3_as_product f3_as_product `um  1 a 3 5 ]
+"64
+[v ___ftmul@sign sign `uc  1 a 1 9 ]
+[v ___ftmul@cntr cntr `uc  1 a 1 8 ]
+[v ___ftmul@exp exp `uc  1 a 1 4 ]
+"62
+[v ___ftmul@f1 f1 `f  1 p 3 8 ]
+[v ___ftmul@f2 f2 `f  1 p 3 11 ]
+"157
+} 0
+"56 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+{
+"60
+[v ___ftdiv@f3 f3 `f  1 a 3 21 ]
+"59
+[v ___ftdiv@sign sign `uc  1 a 1 25 ]
+[v ___ftdiv@exp exp `uc  1 a 1 24 ]
+[v ___ftdiv@cntr cntr `uc  1 a 1 20 ]
+"56
+[v ___ftdiv@f2 f2 `f  1 p 3 10 ]
+[v ___ftdiv@f1 f1 `f  1 p 3 13 ]
+"86
+} 0
+"62 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+{
+[v ___ftpack@arg arg `um  1 p 3 0 ]
+[v ___ftpack@exp exp `uc  1 p 1 3 ]
+[v ___ftpack@sign sign `uc  1 p 1 4 ]
+"86
+} 0

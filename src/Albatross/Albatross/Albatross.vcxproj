@@ -26,6 +26,7 @@
     <ClInclude Include="motor_controller.h" />
     <ClInclude Include="old_common.h" />
     <ClInclude Include="parking.h" />
+    <ClInclude Include="press_button.h" />
     <ClInclude Include="r3069.h" />
     <ClInclude Include="utils.h" />
   </ItemGroup>
@@ -35,6 +36,7 @@
     <ClCompile Include="motor_controller.c" />
     <ClCompile Include="old_main.c" />
     <ClCompile Include="parking.c" />
+    <ClCompile Include="press_button.c" />
     <ClCompile Include="utils.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

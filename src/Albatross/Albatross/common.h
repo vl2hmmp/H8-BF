@@ -42,6 +42,9 @@
 #define  Photo_3  P5.DR.BIT.B2  // 3”Ô–Ú
 #define  Photo_4  P5.DR.BIT.B3  // 4”Ô–Ú
 
+#define Rudder   P7.DR.BIT.B0
+#define Throttle P7.DR.BIT.B1
+
 #define  Black  0
 #define  White  1
 
@@ -49,11 +52,6 @@
 #define  Max_duty    250
 #define  Limit_duty  250
 #define  Ratio_duty (Max_duty/Limit_duty)
-
-// --- Feedback control ---
-#define  STOP   0
-#define  ENCO   1
-#define  PHOTO  2
 
 
 // ************************

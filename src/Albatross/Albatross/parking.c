@@ -1,5 +1,5 @@
 /*
-* @file line_trace.c
+* @file parking.c
 * @brief 車庫入れの制御を行います。
 * @date 2017/12/22
 * @author 桐林　颯
@@ -19,7 +19,14 @@ void feedParking()
 void parking()
 {
 	FeedParkingFlag = 1;
-	// ここに駐車用のtrajなんとかを使って車庫入れ手順を書くこと
-	// trajなんとかはmotor_controller.cの中に定義済み
+
+	printf("parking start");
+	traj_tracking(33, 0, 4);
+	traj_tracking(5, 90, 4);
+	traj_tracking(60, 0, 4);
+	traj_tracking(-26, -90, 4);
+	traj_tracking(-7, 0, 4);
+	printf("parking end");
+
 	FeedParkingFlag = 0;
 }
